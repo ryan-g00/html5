@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>급여 계산</title>
+</head>
+<script>
+    function earnings (name, wage=9860, hours=40){
+        console.log(`# ${name} 님의 급여 정보`)
+        console.log(`- 시급: ${wage}원`)
+        console.log(`- 근무 시간: ${hours}시간`)
+        console.log(`- 급여: ${wage * hours}원`)
+        console.log('')
+    }
+
+    //최저 임금으로 최대한 일하는 경우
+    earnings('수진')
+
+    //시급 12,000원으로 최대한 일하는 경우
+    earnings('철수', 12000)
+
+    //시급 12,000원으로 52시간 일한 경우
+    earnings('민지', 12000, 52)
+</script>
+<body>
+</body>
+</html>
